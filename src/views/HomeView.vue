@@ -1,11 +1,17 @@
 <template>
-  <main>Hello World!</main>
+  <main>
+    <Aside />
+    <RouterView />
+  </main>
 </template>
 
-<script setup></script>
+<script setup>
+import { RouterView } from 'vue-router'
+import Aside from '@/components/Aside.vue'
+</script>
 
 <style scoped>
 main {
-  @apply text-red-600;
+  @apply bg-neutral-900 h-screen flex;
 }
 </style>
